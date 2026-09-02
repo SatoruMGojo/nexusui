@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NEXUS GAMING</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-primary-fixed-variant": "#5516be",
+                      "primary-container": "#a078ff",
+                      "on-surface-variant": "#cbc3d7",
+                      "tertiary-fixed-dim": "#ffafd3",
+                      "surface-container-lowest": "#0e0e0e",
+                      "surface-dim": "#131313",
+                      "on-tertiary-fixed-variant": "#85145a",
+                      "error": "#ffb4ab",
+                      "on-primary-fixed": "#23005c",
+                      "surface-bright": "#393939",
+                      "surface-tint": "#d0bcff",
+                      "on-tertiary-container": "#560038",
+                      "primary": "#d0bcff",
+                      "on-primary": "#3c0091",
+                      "outline-variant": "#494454",
+                      "surface": "#131313",
+                      "inverse-on-surface": "#313030",
+                      "error-container": "#93000a",
+                      "inverse-primary": "#6d3bd7",
+                      "on-surface": "#e5e2e1",
+                      "on-secondary-fixed-variant": "#004e5c",
+                      "on-tertiary": "#620040",
+                      "on-error": "#690005",
+                      "on-secondary-container": "#00424e",
+                      "surface-container-highest": "#353534",
+                      "primary-fixed": "#e9ddff",
+                      "tertiary-container": "#e364a7",
+                      "secondary-container": "#03b5d3",
+                      "background": "#131313",
+                      "tertiary": "#ffafd3",
+                      "outline": "#958ea0",
+                      "primary-fixed-dim": "#d0bcff",
+                      "on-tertiary-fixed": "#3d0026",
+                      "surface-variant": "#353534",
+                      "inverse-surface": "#e5e2e1",
+                      "surface-container": "#201f1f",
+                      "secondary-fixed-dim": "#4cd7f6",
+                      "on-primary-container": "#340080",
+                      "on-background": "#e5e2e1",
+                      "on-secondary-fixed": "#001f26",
+                      "secondary": "#4cd7f6",
+                      "on-error-container": "#ffdad6",
+                      "on-secondary": "#003640",
+                      "surface-container-low": "#1c1b1b",
+                      "secondary-fixed": "#acedff",
+                      "tertiary-fixed": "#ffd8e7",
+                      "surface-container-high": "#2a2a2a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "unit": "4px",
+                      "xxl": "80px",
+                      "sm": "8px",
+                      "md": "16px",
+                      "lg": "24px",
+                      "margin-mobile": "16px",
+                      "margin-desktop": "64px",
+                      "xs": "4px",
+                      "xl": "48px"
+              },
+              "fontFamily": {
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg-mobile": [
+                              "Inter"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "1",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.5",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .glow-primary {
+            box-shadow: 0 0 15px rgba(208, 188, 255, 0.2);
+        }
+        .glow-secondary {
+            box-shadow: 0 0 15px rgba(76, 215, 246, 0.2);
+        }
+        .card-hover:hover {
+            border-color: #d0bcff;
+            box-shadow: 0 0 15px rgba(208, 188, 255, 0.2);
+        }
+        .gradient-overlay {
+            background: linear-gradient(to top, rgba(10,10,10,0.9) 0%, rgba(10,10,10,0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-surface-container-lowest fixed top-0 w-full z-50 border-b border-outline-variant shadow-[0_0_15px_rgba(208,188,255,0.2)]">
+<div class="flex justify-between items-center px-margin-desktop py-md max-w-[1440px] mx-auto">
+<div class="text-headline-md font-headline-md text-primary tracking-tighter">NEXUS GAMING</div>
+<div class="hidden md:flex gap-lg">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 active:scale-95 transition-transform hover:text-secondary transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant font-medium active:scale-95 transition-transform hover:text-secondary transition-colors duration-200" href="#">Categories</a>
+<a class="text-on-surface-variant font-medium active:scale-95 transition-transform hover:text-secondary transition-colors duration-200" href="#">New Releases</a>
+<a class="text-on-surface-variant font-medium active:scale-95 transition-transform hover:text-secondary transition-colors duration-200" href="#">Deals</a>
+</div>
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="search">search</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="notifications">notifications</span>
+<span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-colors" data-icon="settings">settings</span>
+<img alt="User profile avatar" class="w-8 h-8 rounded-full border border-primary object-cover cursor-pointer" data-alt="A small, stylized circular avatar image for a user profile in a high-tech gaming interface. The avatar features a stylized cybernetic character silhouette against a dark glowing purple background, consistent with a neon kinetic aesthetic. Deep blacks and vibrant electric purple accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD94KRLEtL10rXDn1sTILzxGhqoPK48PrJBx_iMV_I0iMuSsJuPS4RJc073sm9pQ-mNvFtsUhD9EDtyC-6g-8Ow3c2IhdUiodpFOLYjt77luY7zKwzBkVhrZDJ0h_xZLSjDQEj_3v4E9mj-K26YJiulBkRVzFP-IocT4HhSo7y6m-iJhGTYg_lx7pxMu94vB7Tj9S0J6wavYMmzUO3S_3bVSMUWo9wG67eXSN723JpKxLzVqJLb7Fz3"/>
+</div>
+</div>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop mt-xl mb-xxl">
+<div class="relative h-[600px] w-full border border-outline-variant rounded-xl overflow-hidden group">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking, cinematic ultra-wide promotional artwork for a sci-fi action video game. The scene depicts a sprawling futuristic cityscape at night, illuminated by glowing neon cyan and electric purple signs. A solitary, highly detailed cybernetic protagonist stands on a precipice overlooking the city. The aesthetic is extremely high-fidelity, matching a premium AAA gaming launcher 'kinetic' style, with deep shadow contrast." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbPFowraOfZCY-eQZ2MFxFoelIDp36sIUqtR7tTIheW6tRf-teQYTRjXykWQKPs1Xw_CE2v3WB4qI1CKwdNxXX0bl_XwW2269tudSe5qYLTVWoyAvRzHA23Ne1ZhCwNm5kq7NZ_YvdRXLwNpIwC-bh0KBRvtiv9wcHWu5GTOyb2i_BV0zP8u2c3AtHKkJT_uaCV-dhcdXZEEHLIXUwwH8yc62DmZfo0W47DDLUbMNT-0PlKlNfJ6xY')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-xl w-full md:w-2/3">
+<span class="inline-block px-sm py-xs bg-primary/10 text-primary font-label-caps text-label-caps rounded mb-md border border-primary/20">FEATURED LAUNCH</span>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-sm">NEON CYNDICATE: OMEGA</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg max-w-2xl">Dive into the sprawling metropolis of Neo-Veridia. Master fluid combat, hack corporate mainframes, and unravel a conspiracy that threatens the fragile peace of the cyberpunk underworld in this highly anticipated Action RPG.</p>
+<div class="flex gap-md">
+<button class="bg-primary text-on-primary px-lg py-md rounded font-label-caps text-label-caps hover:glow-primary transition-all duration-300">
+                            PLAY NOW - $59.99
+                        </button>
+<button class="border border-secondary text-secondary px-lg py-md rounded font-label-caps text-label-caps hover:bg-secondary/10 transition-colors duration-300">
+                            WATCH TRAILER
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Explora el Catálogo -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop mb-xxl">
+<div class="flex justify-between items-end mb-lg border-b border-surface-bright pb-sm">
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Explora el Catálogo</h2>
+<a class="font-label-caps text-label-caps text-primary hover:text-secondary transition-colors" href="#">VIEW ALL</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Game Card 1 -->
+<div class="bg-surface-container-low border border-surface-bright rounded-lg overflow-hidden card-hover transition-all duration-300 flex flex-col group cursor-pointer"><div class="relative h-48 w-full overflow-hidden"><img alt="Minecraft" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="cinematic_landscape_of_minecraft_voxel_art_style_sunset_over_a_blocky_forest.png"/><div class="absolute inset-0 gradient-overlay"></div><span class="absolute top-sm left-sm bg-surface-container-highest/80 px-2 py-1 rounded font-label-caps text-label-caps text-on-surface text-[10px] backdrop-blur-sm border border-outline-variant">Sandbox</span></div><div class="p-md flex flex-col flex-grow"><h3 class="font-headline-md text-headline-md text-on-surface mb-xs truncate">Minecraft</h3><div class="flex items-center gap-xs mb-sm text-secondary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span></div><div class="flex flex-wrap gap-xs mb-md mt-auto"><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Supervivencia</span><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Creativo</span></div><div class="flex justify-between items-center mt-auto border-t border-surface-bright pt-sm"><span></span><span class="font-headline-md text-headline-md text-primary">$29.99</span></div></div></div>
+<!-- Game Card 2 -->
+<div class="bg-surface-container-low border border-surface-bright rounded-lg overflow-hidden card-hover transition-all duration-300 flex flex-col group cursor-pointer"><div class="relative h-48 w-full overflow-hidden"><img alt="Overwatch 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="overwatch_2_hero_lineup_futuristic_action_scene_vibrant_colors_blizzard_art.png"/><div class="absolute inset-0 gradient-overlay"></div><span class="absolute top-sm left-sm bg-surface-container-highest/80 px-2 py-1 rounded font-label-caps text-label-caps text-on-surface text-[10px] backdrop-blur-sm border border-outline-variant">Hero Shooter</span></div><div class="p-md flex flex-col flex-grow"><h3 class="font-headline-md text-headline-md text-on-surface mb-xs truncate">Overwatch 2</h3><div class="flex items-center gap-xs mb-sm text-secondary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 16px;">star_half</span></div><div class="flex flex-wrap gap-xs mb-md mt-auto"><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Competitivo</span><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Acción</span></div><div class="flex justify-between items-center mt-auto border-t border-surface-bright pt-sm"><span></span><span class="font-headline-md text-headline-md text-secondary">Gratis</span></div></div></div>
+<!-- Game Card 3 -->
+<div class="bg-surface-container-low border border-surface-bright rounded-lg overflow-hidden card-hover transition-all duration-300 flex flex-col group cursor-pointer"><div class="relative h-48 w-full overflow-hidden"><img alt="Valorant" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="valorant_tactical_shooter_scene_stylized_character_art_neon_accents_sharp_edges.png"/><div class="absolute inset-0 gradient-overlay"></div><span class="absolute top-sm left-sm bg-surface-container-highest/80 px-2 py-1 rounded font-label-caps text-label-caps text-on-surface text-[10px] backdrop-blur-sm border border-outline-variant">Tactical FPS</span></div><div class="p-md flex flex-col flex-grow"><h3 class="font-headline-md text-headline-md text-on-surface mb-xs truncate">Valorant</h3><div class="flex items-center gap-xs mb-sm text-secondary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 16px;">star_half</span></div><div class="flex flex-wrap gap-xs mb-md mt-auto"><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">E-sports</span><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Habilidades</span></div><div class="flex justify-between items-center mt-auto border-t border-surface-bright pt-sm"><span></span><span class="font-headline-md text-headline-md text-secondary">Gratis</span></div></div></div>
+<!-- Game Card 4 -->
+<div class="bg-surface-container-low border border-surface-bright rounded-lg overflow-hidden card-hover transition-all duration-300 flex flex-col group cursor-pointer"><div class="relative h-48 w-full overflow-hidden"><img alt="Counter-Strike 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" src="counter_strike_2_tactical_combat_scene_realistic_military_shooter_style_dust2.png"/><div class="absolute inset-0 gradient-overlay"></div><span class="absolute top-sm left-sm bg-surface-container-highest/80 px-2 py-1 rounded font-label-caps text-label-caps text-on-surface text-[10px] backdrop-blur-sm border border-outline-variant">Tactical FPS</span></div><div class="p-md flex flex-col flex-grow"><h3 class="font-headline-md text-headline-md text-on-surface mb-xs truncate">Counter-Strike 2</h3><div class="flex items-center gap-xs mb-sm text-secondary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size: 16px;">star</span></div><div class="flex flex-wrap gap-xs mb-md mt-auto"><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Clásico</span><span class="px-2 py-1 bg-secondary/10 text-secondary font-label-caps text-[10px] rounded">Táctico</span></div><div class="flex justify-between items-center mt-auto border-t border-surface-bright pt-sm"><span></span><span class="font-headline-md text-headline-md text-secondary">Gratis</span></div></div></div>
+</div>
+</section>
+<!-- Newsletter Section -->
+<section class="max-w-[1440px] mx-auto px-margin-desktop mb-xxl">
+<div class="bg-surface-container border border-primary/30 rounded-xl p-xl flex flex-col md:flex-row items-center justify-between gap-lg relative overflow-hidden">
+<!-- Abstract glowing background element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
+<div class="z-10 max-w-lg">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-sm">Suscripción Newsletter</h2>
+<p class="font-body-md text-on-surface-variant">Mantente al día con los últimos lanzamientos, actualizaciones de parches y ofertas exclusivas. Sin spam, solo gaming de alto nivel.</p>
+</div>
+<div class="z-10 w-full md:w-auto flex flex-col sm:flex-row gap-sm">
+<input class="bg-background border border-outline-variant rounded px-md py-sm text-on-surface focus:outline-none focus:border-secondary focus:ring-1 focus:ring-secondary/50 font-body-md min-w-[300px] transition-colors" placeholder="Ingresa tu email..." type="email"/>
+<button class="bg-primary text-on-primary px-lg py-sm rounded font-label-caps text-label-caps hover:glow-primary transition-all duration-300 whitespace-nowrap">
+                        SUSCRIBIRSE
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low dark:bg-surface-container-low w-full mt-xxl border-t border-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg px-margin-desktop py-xl max-w-[1440px] mx-auto">
+<div class="text-label-caps font-label-caps text-on-surface">
+                NEXUS GAMING
+            </div>
+<div class="flex flex-col gap-sm">
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">About Us</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Support</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors" href="#">Newsletter</a>
+</div>
+<div class="text-secondary font-body-md text-body-md md:text-right">
+                © 2024 NEXUS GAMING platform. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
