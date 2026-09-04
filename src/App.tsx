@@ -5,6 +5,7 @@ import minecraftImg from './assets/cinematic_landscape_of_minecraft_voxel_art_st
 import overwatchImg from './assets/overwatch_2_hero_lineup_futuristic_action_scene_vibrant_colors_blizzard_art.png';
 import valorantImg from './assets/valorant_tactical_shooter_scene_stylized_character_art_neon_accents_sharp_edges.png';
 import cs2Img from './assets/counter_strike_2_tactical_combat_scene_realistic_military_shooter_style_dust2.png';
+import Banner from "./components/Banner/Banner.tsx";
 
 /**
  * NEXUS GAMING — catálogo de juegos.
@@ -77,22 +78,7 @@ export default function App() {
 
         <main className="main">
           {/* Hero */}
-          <section className="shell hero">
-            <div className="hero__frame">
-              <div className="hero__bg" role="img" aria-label="Metrópolis futurista de noche iluminada por neones cian y púrpura, con un protagonista cibernético en un saliente." data-alt="A breathtaking, cinematic ultra-wide promotional artwork for a sci-fi action video game. The scene depicts a sprawling futuristic cityscape at night, illuminated by glowing neon cyan and electric purple signs. A solitary, highly detailed cybernetic protagonist stands on a precipice overlooking the city. The aesthetic is extremely high-fidelity, matching a premium AAA gaming launcher 'kinetic' style, with deep shadow contrast." />
-              <div className="hero__scrim" />
-
-              <div className="hero__content">
-                <span className="hero__badge t-label-caps">FEATURED LAUNCH</span>
-                <h1 className="hero__title t-display">NEON CYNDICATE: OMEGA</h1>
-                <p className="hero__text t-body-lg">Dive into the sprawling metropolis of Neo-Veridia. Master fluid combat, hack corporate mainframes, and unravel a conspiracy that threatens the fragile peace of the cyberpunk underworld in this highly anticipated Action RPG.</p>
-                <div className="hero__actions">
-                  <button className="btn btn--primary" type="button">PLAY NOW - $59.99</button>
-                  <button className="btn btn--outline" type="button">WATCH TRAILER</button>
-                </div>
-              </div>
-            </div>
-          </section>
+          <Banner />
 
           {/* Explora el Catálogo */}
           <section className="shell section">
