@@ -1,4 +1,6 @@
 import './App.css';
+import BtnPrimary from "./components/BtnPrimary/BtnPrimary.tsx";
+import BtnOutline from "./components/BtnOutline/BtnOutline.tsx";
 
 /**
  * NEXUS GAMING — catálogo de juegos.
@@ -145,12 +147,8 @@ export default function App() {
                   highly anticipated Action RPG.
                 </p>
                 <div className="hero__actions">
-                  <button className="btn btn--primary" type="button">
-                    PLAY NOW - $59.99
-                  </button>
-                  <button className="btn btn--outline" type="button">
-                    WATCH TRAILER
-                  </button>
+                  <BtnPrimary price={59.99}/>
+                  <BtnOutline content={"WATCH TRAILER"}/>
                 </div>
               </div>
             </div>
