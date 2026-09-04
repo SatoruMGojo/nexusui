@@ -5,21 +5,11 @@ import minecraftImg from './assets/cinematic_landscape_of_minecraft_voxel_art_st
 import overwatchImg from './assets/overwatch_2_hero_lineup_futuristic_action_scene_vibrant_colors_blizzard_art.png';
 import valorantImg from './assets/valorant_tactical_shooter_scene_stylized_character_art_neon_accents_sharp_edges.png';
 import cs2Img from './assets/counter_strike_2_tactical_combat_scene_realistic_military_shooter_style_dust2.png';
+import { GameCard, type Game } from './components/GameCard/GameCard';
 
 /**
  * NEXUS GAMING — catálogo de juegos.
  */
-
-type Game = {
-  title: string;
-  genre: string;
-  /** Valoración sobre 5; los medios puntos se dibujan con star_half. */
-  rating: number;
-  tags: string[];
-  price: string;
-  free: boolean;
-  image: string;
-};
 
 const GAMES: Game[] = [
   {
@@ -60,15 +50,6 @@ const GAMES: Game[] = [
   },
 ];
 
-/** Convierte una valoración numérica en los cinco iconos de estrella. */
-function starsFor(rating: number): Array<'full' | 'half' | 'empty'> {
-  return Array.from({ length: 5 }, (_, index) => {
-    if (rating >= index + 1) return 'full';
-    if (rating >= index + 0.5) return 'half';
-    return 'empty';
-  });
-}
-
 export default function App() {
   return (
       <div className="app">
@@ -103,31 +84,7 @@ export default function App() {
 
             <div className="game-grid">
               {GAMES.map((game) => (
-                  <div className="game-card" key={game.title}>
-                    <div className="game-card__media">
-                      <img className="game-card__img" src={game.image} alt={game.title} />
-                      <div className="game-card__overlay" />
-                      <span className="game-card__genre">{game.genre}</span>
-                    </div>
-
-                    <div className="game-card__body">
-                      <h3 className="game-card__title t-headline-md">{game.title}</h3>
-
-                      <div className="game-card__rating" aria-label={`Valoración ${game.rating} de 5`}>
-                        {starsFor(game.rating).map((star, index) => (
-                            <span key={index} className={`material-symbols-outlined${star === 'full' ? ' material-symbols-outlined--filled' : ''}`} aria-hidden="true">{star === 'half' ? 'star_half' : 'star'}</span>
-                        ))}
-                      </div>
-
-                      <div className="game-card__tags">
-                        {game.tags.map((tag) => (
-                            <span className="game-card__tag" key={tag}>{tag}</span>
-                        ))}
-                      </div>
-
-                      <div className="game-card__foot"><span></span><span className={`t-headline-md ${game.free ? 'game-card__price--free' : 'game-card__price--paid'}`}>{game.price}</span></div>
-                    </div>
-                  </div>
+                  <GameCard key={game.title} game={game} />
               ))}
             </div>
           </section>
