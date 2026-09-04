@@ -161,87 +161,7 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* ==========================================================================
-   TopNavBar
-   ========================================================================== */
 
-.nav {
-  position: fixed;
-  top: 0;
-  z-index: 50;
-  width: 100%;
-  background-color: var(--surface-container-lowest);
-  border-bottom: 1px solid var(--outline-variant);
-  box-shadow: var(--glow-primary);
-}
-
-.nav__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: var(--space-md);
-  padding-bottom: var(--space-md);
-}
-
-.nav__brand {
-  font-size: 24px;
-  line-height: 1.3;
-  font-weight: 600;
-  letter-spacing: -0.05em;
-  color: var(--primary);
-}
-
-.nav__links {
-  display: none;
-  gap: var(--space-lg);
-}
-
-.nav__link {
-  color: var(--on-surface-variant);
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 200ms, transform 150ms;
-}
-
-.nav__link:hover {
-  color: var(--secondary);
-}
-
-.nav__link:active {
-  transform: scale(0.95);
-}
-
-.nav__link--active {
-  color: var(--primary);
-  font-weight: 700;
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 4px;
-}
-
-.nav__actions {
-  display: flex;
-  align-items: center;
-  gap: var(--space-md);
-}
-
-.nav__icon {
-  color: var(--on-surface-variant);
-  cursor: pointer;
-  transition: color 200ms;
-}
-
-.nav__icon:hover {
-  color: var(--primary);
-}
-
-.nav__avatar {
-  width: 32px;
-  height: 32px;
-  border-radius: 9999px;
-  border: 1px solid var(--primary);
-  object-fit: cover;
-  cursor: pointer;
-}
 
 /* ==========================================================================
    Botones
@@ -620,49 +540,6 @@ body {
 }
 
 /* ==========================================================================
-   Footer
-   ========================================================================== */
-
-.footer {
-  width: 100%;
-  margin-top: var(--space-xxl);
-  background-color: var(--surface-container-low);
-  border-top: 1px solid var(--outline-variant);
-}
-
-.footer__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-lg);
-  padding-top: var(--space-xl);
-  padding-bottom: var(--space-xl);
-}
-
-.footer__brand {
-  color: var(--on-surface);
-}
-
-.footer__links {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
-
-.footer__link {
-  color: var(--on-surface-variant);
-  text-decoration: none;
-  transition: color 200ms;
-}
-
-.footer__link:hover {
-  color: var(--primary);
-}
-
-.footer__copy {
-  color: var(--secondary);
-}
-
-/* ==========================================================================
    Breakpoints
    ========================================================================== */
 
@@ -676,10 +553,6 @@ body {
   .shell {
     padding-left: var(--margin-desktop);
     padding-right: var(--margin-desktop);
-  }
-
-  .nav__links {
-    display: flex;
   }
 
   .hero__content {
@@ -696,14 +569,6 @@ body {
 
   .newsletter__form {
     width: auto;
-  }
-
-  .footer__inner {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .footer__copy {
-    text-align: right;
   }
 }
 

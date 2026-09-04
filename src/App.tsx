@@ -1,4 +1,6 @@
 import './App.css';
+import {Header} from "./components/Header/Header.tsx";
+import {Footer} from "./components/Footer/Footer.tsx";
 
 /**
  * NEXUS GAMING — catálogo de juegos.
@@ -20,13 +22,6 @@ type Game = {
 
 const HERO_BACKGROUND =
     "url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbPFowraOfZCY-eQZ2MFxFoelIDp36sIUqtR7tTIheW6tRf-teQYTRjXykWQKPs1Xw_CE2v3WB4qI1CKwdNxXX0bl_XwW2269tudSe5qYLTVWoyAvRzHA23Ne1ZhCwNm5kq7NZ_YvdRXLwNpIwC-bh0KBRvtiv9wcHWu5GTOyb2i_BV0zP8u2c3AtHKkJT_uaCV-dhcdXZEEHLIXUwwH8yc62DmZfo0W47DDLUbMNT-0PlKlNfJ6xY')";
-
-const AVATAR_SRC =
-    'https://lh3.googleusercontent.com/aida-public/AB6AXuD94KRLEtL10rXDn1sTILzxGhqoPK48PrJBx_iMV_I0iMuSsJuPS4RJc073sm9pQ-mNvFtsUhD9EDtyC-6g-8Ow3c2IhdUiodpFOLYjt77luY7zKwzBkVhrZDJ0h_xZLSjDQEj_3v4E9mj-K26YJiulBkRVzFP-IocT4HhSo7y6m-iJhGTYg_lx7pxMu94vB7Tj9S0J6wavYMmzUO3S_3bVSMUWo9wG67eXSN723JpKxLzVqJLb7Fz3';
-
-const NAV_LINKS = ['Home', 'Categories', 'New Releases', 'Deals'];
-
-const NAV_ICONS = ['search', 'notifications', 'settings'];
 
 const GAMES: Game[] = [
   {
@@ -71,8 +66,6 @@ const GAMES: Game[] = [
   },
 ];
 
-const FOOTER_LINKS = ['About Us', 'Support', 'Privacy Policy', 'Newsletter'];
-
 /** Convierte una valoración numérica en los cinco iconos de estrella. */
 function starsFor(rating: number): Array<'full' | 'half' | 'empty'> {
   return Array.from({ length: 5 }, (_, index) => {
@@ -86,42 +79,7 @@ export default function App() {
   return (
       <div className="app">
         {/* TopNavBar */}
-        <nav className="nav">
-          <div className="shell nav__inner">
-            <div className="nav__brand">NEXUS GAMING</div>
-
-            <div className="nav__links">
-              {NAV_LINKS.map((label, index) => (
-                  <a
-                      key={label}
-                      className={`nav__link${index === 0 ? ' nav__link--active' : ''}`}
-                      href="#"
-                  >
-                    {label}
-                  </a>
-              ))}
-            </div>
-
-            <div className="nav__actions">
-              {NAV_ICONS.map((icon) => (
-                  <span
-                      className="material-symbols-outlined nav__icon"
-                      key={icon}
-                      role="button"
-                      tabIndex={0}
-                      aria-label={icon}
-                  >
-                {icon}
-              </span>
-              ))}
-              <img
-                  className="nav__avatar"
-                  src={AVATAR_SRC}
-                  alt="User profile avatar"
-              />
-            </div>
-          </div>
-        </nav>
+        <Header />
 
         <main className="main">
           {/* Hero */}
@@ -254,23 +212,7 @@ export default function App() {
         </main>
 
         {/* Footer */}
-        <footer className="footer">
-          <div className="shell footer__inner">
-            <div className="footer__brand t-label-caps">NEXUS GAMING</div>
-
-            <div className="footer__links">
-              {FOOTER_LINKS.map((link) => (
-                  <a className="footer__link t-body-md" href="#" key={link}>
-                    {link}
-                  </a>
-              ))}
-            </div>
-
-            <div className="footer__copy t-body-md">
-              © 2024 NEXUS GAMING platform. All rights reserved.
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
   );
 }
