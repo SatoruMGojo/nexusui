@@ -235,6 +235,7 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
+  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBbPFowraOfZCY-eQZ2MFxFoelIDp36sIUqtR7tTIheW6tRf-teQYTRjXykWQKPs1Xw_CE2v3WB4qI1CKwdNxXX0bl_XwW2269tudSe5qYLTVWoyAvRzHA23Ne1ZhCwNm5kq7NZ_YvdRXLwNpIwC-bh0KBRvtiv9wcHWu5GTOyb2i_BV0zP8u2c3AtHKkJT_uaCV-dhcdXZEEHLIXUwwH8yc62DmZfo0W47DDLUbMNT-0PlKlNfJ6xY');
   background-size: cover;
   background-position: center;
   transition: transform 700ms;
@@ -445,7 +446,7 @@ body {
 
 .game-card__foot {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   margin-top: auto;
   padding-top: var(--space-sm);
