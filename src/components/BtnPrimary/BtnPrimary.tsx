@@ -6,7 +6,7 @@ interface Props {
 
 const BtnPrimary = ({ content }: Props) => (
     <button className="btn btn--primary" type="button">
-        PLAY NOW - {content}
+        {content}
     </button>
 );
 
