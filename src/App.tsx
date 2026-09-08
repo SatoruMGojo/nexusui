@@ -5,7 +5,8 @@ import minecraftImg from './assets/cinematic_landscape_of_minecraft_voxel_art_st
 import overwatchImg from './assets/overwatch_2_hero_lineup_futuristic_action_scene_vibrant_colors_blizzard_art.png';
 import valorantImg from './assets/valorant_tactical_shooter_scene_stylized_character_art_neon_accents_sharp_edges.png';
 import cs2Img from './assets/counter_strike_2_tactical_combat_scene_realistic_military_shooter_style_dust2.png';
-import Suscripcion from './componentes/suscripcion/suscripcion';
+import Suscripcion from './components/suscripcion/suscripcion.tsx';
+import Banner from './components/Banner/Banner.tsx';
 
 /**
  * NEXUS GAMING — catálogo de juegos.
