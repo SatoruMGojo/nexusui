@@ -12,7 +12,7 @@ export default function Banner() {
                     <h1 className="hero__title t-display">NEON CYNDICATE: OMEGA</h1>
                     <p className="hero__text t-body-lg">Dive into the sprawling metropolis of Neo-Veridia. Master fluid combat, hack corporate mainframes, and unravel a conspiracy that threatens the fragile peace of the cyberpunk underworld in this highly anticipated Action RPG.</p>
                     <div className="hero__actions">
-                        <BtnPrimary price={49.99}/>
+                        <BtnPrimary content={"$59.99"}/>
                         <BtnOutline content={"WATCH TRAILER"}/>
                     </div>
                 </div>

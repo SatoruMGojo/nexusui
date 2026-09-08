@@ -1,12 +1,12 @@
 import './BtnPrimary.css';
 
 interface Props {
-    price: number;
+    content: string;
 }
 
-const BtnPrimary = ({ price }: Props) => (
+const BtnPrimary = ({ content }: Props) => (
     <button className="btn btn--primary" type="button">
-        PLAY NOW - {price}
+        PLAY NOW - {content}
     </button>
 );
 
