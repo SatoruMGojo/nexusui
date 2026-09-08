@@ -387,28 +387,6 @@ body {
   gap: var(--space-sm);
 }
 
-.newsletter__input {
-  min-width: 300px;
-  padding: var(--space-sm) var(--space-md);
-  background-color: var(--background);
-  border: 1px solid var(--outline-variant);
-  border-radius: var(--radius);
-  color: var(--on-surface);
-  font-family: inherit;
-  font-size: 16px;
-  line-height: 1.5;
-  outline: none;
-  transition: border-color 200ms, box-shadow 200ms;
-}
-
-.newsletter__input::placeholder {
-  color: var(--outline);
-}
-
-.newsletter__input:focus {
-  border-color: var(--secondary);
-  box-shadow: 0 0 0 1px rgba(76, 215, 246, 0.5);
-}
 
 /* ==========================================================================
    Breakpoints
