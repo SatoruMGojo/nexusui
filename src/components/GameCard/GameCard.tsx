@@ -1,3 +1,4 @@
+import './GameCard.css';
 import { StarRating } from '../StarRating/StarRating';
 
 export type Game = {

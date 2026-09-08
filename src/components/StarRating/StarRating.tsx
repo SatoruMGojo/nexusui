@@ -1,3 +1,5 @@
+import './StarRating.css';
+
 type Star = 'full' | 'half' | 'empty';
 
 function starsFor(rating: number): Star[] {
